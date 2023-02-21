@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --clr:  #0ae427;
+}
+
+body{
+  background: rgb(44, 44, 44);
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-family:monospace !important;
+}
+.nav {
+  color: var(--clr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.nav .siteTitle {
+  font-size: 2rem;
+}
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  font-size: 1.2rem;
+  transition: 500ms;
+}
+
+.nav ul a:hover {
+  color: yellow;
+
+}
+
+.nav ul li a:active {
+  color: white;
+
+}
+
+.nav a {
+  list-style: none;
+  text-decoration: none;
+  transition: 500ms;
+}
+.nav a:visited {
+  color: inherit;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(218, 18, 18);
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.funBarCheckbox{
+  accent-color: yellow;
+}
+
+.dBarCheckbox {
+  accent-color: var(--clr);
+}
+
+#sel {
+  background:rgba(44, 44, 44, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+#sel:hover {
+  cursor: pointer;
+}
+
+.container{
+  background:rgb(44, 44, 44);
+  padding: 20px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right:0;
+}
+
+
+
+.place-chart{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  margin: auto;
+}
+.place-chart div{
+  width:auto;
+  margin:10px ;
+  border: 2px solid var(--clr);
+  display: flex;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 20px;
+}
+
+.place-chart div:hover{
+  background-color: rgba(0, 0, 0, 0.591);
+  transition: 500ms;
+}
+
+.charter{
+  display:grid;
+}
+
+.charter-1{
+  display:grid;
+  grid-template-columns: auto;
+  margin:auto auto;
+  align-content: center;
+  padding: 10px;
+}
+
+.charter-2{
+  overflow: scroll;
+  border: 30px solid rgb(55, 55, 55);
+  padding: 30px;
+  overflow: scroll;
+  width: auto;
+  align-items: end;
+  justify-items: end;
+  
+}
+
+.charter-3{
+  display:grid;
+  grid-template-columns: auto;
+  margin:auto auto;
+  align-content: center;
+  width:auto;
+  border: 2px solid var(--clr);
+  padding: 15px;
+  border-radius: 10px;
+  animation: pulse 1500ms infinite;
+  
+}
+
+.recharts-default-tooltip{
+  background-color: #000000f5 !important;
+}
+
+
+
+
+@keyframes pulse{
+  0%{
+    box-shadow: var(--clr) 0 0 0 0;
+  }
+
+  80%{
+    box-shadow:   rgb(44, 44, 44) 0 0 0 10px;
+  }
+}
+
+
+ul.recharts-default-legend {
+  position: fixed;
+}
